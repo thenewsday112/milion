@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>News Portal Indonesia - Page 16</title>
+<meta name="description" content="Page 16">
+<link rel="canonical" href="https://thenewsday112.github.io/milion/page16.html">
+<style>
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f8;margin:0;padding:20px;color:#333;line-height:1.6}
+.container{max-width:1000px;margin:0 auto}
+header{background:#1e293b;color:#fff;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center}
+header h1{margin:0;font-size:26px;letter-spacing:1px}
+nav{background:#fff;padding:10px;border-radius:12px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+nav a{padding:8px 16px;border-radius:8px;color:#475569;text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover,nav a.active{background:#2563eb;color:#fff}
+.article-card{background:#fff;padding:24px;margin-bottom:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2563eb}
+.article-card h2{margin:0 0 12px;font-size:22px;color:#1e293b}
+.article-meta{font-size:13px;color:#64748b;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}
+.article-meta a{color:#2563eb;text-decoration:none;font-weight:bold}
+.article-body{font-size:16px;line-height:1.8;color:#334155}
+.article-body img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}
+.pagination{text-align:center;margin:40px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.pagination a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#334155;font-weight:bold;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+.pagination a.active{background:#2563eb;color:#fff}
+footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:1px solid #e2e8f0;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>News Portal Indonesia</h1></header>
+<nav><a href="index.html" class="active">🏠 All News</a><a href="technology.html">📰 Technology</a><a href="business.html">📰 Business</a><a href="sports.html">📰 Sports</a><a href="entertainment.html">📰 Entertainment</a><a href="health.html">📰 Health</a><a href="science.html">📰 Science</a><a href="politics.html">📰 Politics</a><a href="world.html">📰 World</a><a href="finance.html">📰 Finance</a><a href="travel.html">📰 Travel</a><a href="food.html">📰 Food</a><a href="automotive.html">📰 Automotive</a><a href="education.html">📰 Education</a><a href="lifestyle.html">📰 Lifestyle</a><a href="other.html">📰 Other</a></nav>
+<h1 style="color:#1e293b;border-left:5px solid #2563eb;padding-left:15px;margin-bottom:30px;">News Portal Indonesia - Page 16</h1>
+<article class="article-card" id="artikel-273">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Task Scheduler: How to Set Up Recurring Tasks on Windows", "image": [], "datePublished": "2025-07-01T22:49:55+00:00", "dateModified": "2025-07-01T22:49:55+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-273"}</script>
+    
+    <div class="article-meta">
+        📅 Jul 01, 2025 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp;
+        <a href="https://sysadminhub.info/task-scheduler-how-to-set-up-recurring-tasks-on-windows/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=task-scheduler-how-to-set-up-recurring-tasks-on-windows" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><h2>Introduction</h2>
+
+
+
+<p>Automating repetitive or system-level tasks in Windows environments can drastically improve efficiency and reduce human error. One of the most powerful tools for automation on Windows is <strong>Task Scheduler</strong>. Whether you&#8217;re an IT administrator, DevOps engineer, or power user, creating tasks that run scripts, launch programs, or trigger on specific system events can help streamline your workflows and enforce policy compliance.</p>
+
+
+
+<p>In this guide, we’ll cover everything you need to know about scheduled tasks—from the basics to advanced implementation. We&#8217;ll explore how to create tasks using the GUI, automate them with PowerShell, import/export XML configurations, and apply best practices for enterprise environments</p>
+
+
+
+<p>For the official Microsoft documentation on Task Scheduler, visit the <a href="https://learn.microsoft.com/en-us/windows/win32/taskschd/about-the-task-scheduler" title="">Task Scheduler Overview.</a></p>
+
+
+
+<h2>What is Task Scheduler?</h2>
+
+
+
+<p><strong>Task Scheduler</strong> is a built-in Windows tool that allows you to launch programs or scripts automatically at pre-defined times or system events. It uses triggers (like logon, startup, or scheduled time), conditions (such as idle or battery state), and actions (run a script, send an email, etc.) to automate workflows.</p>
+
+
+
+<h2>Common Use Cases</h2>
+
+
+
+<ul>
+<li>Run PowerShell scripts at user logon</li>
+
+
+
+<li>Trigger device clean-up operations at shutdown</li>
+
+
+
+<li>Launch backup jobs on a weekly schedule</li>
+
+
+
+<li>Monitor system events and send alerts</li>
+
+
+
+<li>Perform routine maintenance outside business hours</li>
+
+
+
+<li>Automate log file collection</li>
+
+
+
+<li>Schedule application launches</li>
+</ul>
+
+
+
+
+
+
+
+
+<h2>Method 1: Create a Task Using the Task Scheduler GUI</h2>
+
+
+
+<h3>Step-by-Step Instructions</h3>
+
+
+
+<ul>
+<li><strong>Open Task Scheduler</strong><ul><li>Press Win + R, type taskschd.msc, and press Enter.</li></ul></li>
+</ul>
+
+
+
+
+<img alt="taskschd.msc" src="https://sysadminhub.info/wp-content/uploads/2025/07/taskschd.msc_.jpg">
+
+
+
+<ul>
+<li><strong>Create a Basic Task</strong><ul><li>Click <strong>Create Basic Task</strong> on the right-hand pane.Name the task (e.g., &#8220;Backup Documents&#8221;) and provide a description.</li></ul></li>
+</ul>
+
+
+
+
+<img alt="Create Task Scheduler Wizard" src="https://sysadminhub.info/wp-content/uploads/2025/07/Create_Task_Wizard-1024x720.jpg">
+
+
+
+<ul>
+<li><strong>Choose a Trigger</strong><ul><li>Select the event that will trigger the task (e.g., Daily, At logon, On an event).Customize trigger options (e.g., recurrence, start time). I will choose When a specific event is logged, to trigger the task at the device restart</li></ul></li>
+</ul>
+
+
+
+
+<img alt="Task Scheduler Trigger" src="https://sysadminhub.info/wp-content/uploads/2025/07/Task_Scheduler_Trigger-1024x714.jpg">
+
+
+
+<ul>
+<li><strong>Select the event settings</strong>
+<ul>
+<li>Log: <strong><em>System</em></strong></li>
+
+
+
+<li>Source: <strong><em>User32</em></strong></li>
+
+
+
+<li>EventID: <strong><em>1074</em></strong></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<img alt="Task Scheduler Trigger Event Details" src="https://sysadminhub.info/wp-content/uploads/2025/07/Task_Scheduler_Trigger_Event_Details.jpg">
+
+
+
+<ul>
+<li><strong>Define the Action</strong><ul><li>Choose <strong>Start a program</strong>.Browse to your executable or script file. To run a PowerShell script, use:Program/script: powershell.exe Add arguments: -ExecutionPolicy Bypass -File "C:\ProgramData\Microsoft\Task\Rename-Device-on-Shutdown.ps1"</li></ul></li>
+</ul>
+
+
+
+
+<img alt="Task Scheduler Action Start a Program" src="https://sysadminhub.info/wp-content/uploads/2025/07/Task_Scheduler_Action_Start_Program.jpg">
+
+
+
+<ul>
+<li><strong>Set Additional Options</strong>
+<ul>
+<li>Choose to open the task&#8217;s properties dialog after creation.</li>
+
+
+
+<li>On the <strong>General</strong> tab, select &#8220;Run whether user is logged on or not&#8221;.</li>
+
+
+
+<li>Choose &#8220;Run with highest privileges&#8221; for SYSTEM-level access.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Finish</strong>
+<ul>
+<li>Review the configuration and click finish</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<img alt="Review configuration" src="https://sysadminhub.info/wp-content/uploads/2025/07/Review_Configuration.jpg">
+
+
+
+<ul>
+<li><strong>Security Option</strong><ul><li>Open the Task</li></ul>
+<ul>
+<li>go to security Option</li>
+
+
+
+<li>Change the User or group to <strong>System</strong></li>
+
+
+
+<li>Run with highest privileges</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<img alt="Task Scheduler Security Options" src="https://sysadminhub.info/wp-content/uploads/2025/07/Task_Scheduler_Security_Options.jpg">
+
+
+
+
+
+
+
+
+<h2>Method 2: Creating a Task Scheduler Using PowerShell</h2>
+
+
+
+<h3>Script-Based Automation</h3>
+
+
+
+<p>Use PowerShell to create tasks in enterprise environments or as part of provisioning workflows.</p>
+
+
+
+
+$Action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument '-ExecutionPolicy Bypass -File "C:\Scripts\Cleanup.ps1"'
+$Trigger = New-ScheduledTaskTrigger -AtStartup
+$Principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
+$Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+
+Register-ScheduledTask -TaskName "SystemCleanup" -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings
+
+
+
+<h3>Explanation</h3>
+
+
+
+<ul>
+<li>New-ScheduledTaskAction: What to run</li>
+
+
+
+<li>New-ScheduledTaskTrigger: When to run</li>
+
+
+
+<li>New-ScheduledTaskPrincipal: Who runs it</li>
+
+
+
+<li>New-ScheduledTaskSettingsSet: Additional task rules</li>
+</ul>
+
+
+
+<blockquote>
+<p>You may not be able to specifiy the triger by event using powershell</p>
+</blockquote>
+
+
+
+<p>This method is ideal for deploying tasks with Intune, Configuration Manager, or startup scripts.</p>
+
+
+
+
+
+
+
+
+<h2>Method 3: Import/Export Scheduled Tasks via XML</h2>
+
+
+
+<h3>Export a Task</h3>
+
+
+
+<ul>
+<li>Right-click any existing task → <strong>Export</strong>.</li>
+
+
+
+<li>Save as .xml to share or reuse.</li>
+</ul>
+
+
+
+
+<img alt="Export Task Scheduler" src="https://sysadminhub.info/wp-content/uploads/2025/07/Export_Task_Scheduler.jpg">
+
+
+
+<h3>Import XML Task Scheduler</h3>
+
+
+
+<h4>GUI Method:</h4>
+
+
+
+<ol>
+<li>In Task Scheduler, click <strong>Import Task</strong>.</li>
+
+
+
+<li>Choose your .xml file.</li>
+</ol>
+
+
+
+<h4>PowerShell Method:</h4>
+
+
+
+
+$xml = Get-Content -Path "C:\Tasks\MyTask.xml" | Out-String
+Register-ScheduledTask -Xml $xml -TaskName "RestoredTask"
+
+
+
+<h3>Benefits of XML-Based Scheduling</h3>
+
+
+
+<ul>
+<li>Version control</li>
+
+
+
+<li>Easy rollback</li>
+
+
+
+<li>Multi-environment support (e.g., dev/test/prod)</li>
+
+
+
+<li>Compatible with enterprise scripting pipelines</li>
+</ul>
+
+
+
+
+
+
+
+
+<h2>Troubleshooting Task Scheduler</h2>
+
+
+
+
+
+IssueSolutionTask not runningEnsure correct permissions and triggersScript fails silentlyCheck task history and logsPowerShell window pops upUse -WindowStyle Hidden flagTask doesn&#8217;t persist after rebootUse SYSTEM account and proper triggersLogs not writtenVerify script output path and access rights
+
+
+
+<blockquote>
+<p>Use Get-ScheduledTask, Get-ScheduledTaskInfo, and Get-EventLog in PowerShell to gather diagnostics.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+<h2>Real-World Use Cases</h2>
+
+
+
+<p><strong>1. Device Renaming at Shutdown</strong></p>
+
+
+
+<p>Trigger a renaming script based on Event ID 1074 to dynamically update hostnames. see <a href="https://sysadminhub.info/intune-task-scheduler-the-ultimate-guide-to-automated-device-renaming/" title="">Automate Device Renaming</a></p>
+
+
+
+<p><strong>2. Patch Validation Reports</strong></p>
+
+
+
+<p>Automate checks post-patch deployment to ensure services are running and updates succeeded.</p>
+
+
+
+<p><strong>3. User Logon Scripts</strong></p>
+
+
+
+<p>Deploy personalized environments (e.g., drive mapping, app launching) upon login.</p>
+
+
+
+<p><strong>4. Cloud Integration</strong></p>
+
+
+
+<p>Push log files to cloud storage or notify via Teams when backups complete.</p>
+
+
+
+<p><strong>5. Legacy App Support</strong></p>
+
+
+
+<p>Restart legacy services at specific hours to maintain uptime.</p>
+
+
+
+
+
+
+
+
+<h2>Best Practices</h2>
+
+
+
+
+
+<strong>Practice</strong><strong>Benefit</strong>Use SYSTEM accountElevated access for all usersStore scripts in ProgramDataSecure, persistent file pathUse XML versioningEasy rollback and redeploymentMonitor logsReliable troubleshootingDocument your tasksEasier handoff and auditingAssign meaningful task namesBetter maintainabilityAvoid hardcoded pathsUse environment variables or relative paths
+
+
+
+
+
+
+
+
+<h2>Conclusion</h2>
+
+
+
+<p>Scheduled Tasks in Windows are essential for proactive automation and robust system administration. From simple GUI-created jobs to advanced enterprise-level deployments with PowerShell and XML, understanding this tool unlocks endless automation possibilities.</p>
+
+
+
+<p>By incorporating best practices, documenting task behavior, and monitoring logs regularly, IT teams can ensure predictable, scalable operations across their Windows environments.</p><p>The post <a href="https://sysadminhub.info/task-scheduler-how-to-set-up-recurring-tasks-on-windows/">Task Scheduler: How to Set Up Recurring Tasks on Windows</a> first appeared on <a href="https://sysadminhub.info">SysAdmin Hub</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-125">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Guardian Insurance Brokers – Winner of the 2025 Large Brokerage of the Year Award", "image": [], "datePublished": "2025-06-25T05:23:12+00:00", "dateModified": "2025-06-25T05:23:12+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-125"}</script>
+    <h2>Guardian Insurance Brokers – Winner of the 2025 Large Brokerage of the Year Award</h2>
+    <div class="article-meta">
+        📅 Jun 25, 2025 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp;
+        <a href="https://guardian.com.au/2025/06/25/guardian-insurance-brokers-winner-of-the-2025-large-brokerage-of-the-year-award/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body">
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				<span><img alt="" src="https://guardian.com.au/wp-content/uploads/2025/06/Screen-Shot-2025-06-25-at-3.06.10-pm.png"></span>
+			
+			
+
+				
+				
+				
+				
+				
+			
+				
+				
+				
+				
+			
+
+				
+
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+<p><span>On Friday 2 May Guardian Insurance Brokers was awarded Large Brokerage of the Year at the 2025 Insurance Business Australia Awards gala dinner in Sydney.</span></p>
+<p>The award acknowledges the hard work of the industry’s best with entrants judged on client retention, customer service proposition, financial results including total revenue, percentage of new business and growth in client and staff numbers, staff development and retention and the business’ value proposition and strategy around stakeholder engagement.</p>
+<p>This achievement and recognition are a testament to the dedication of our exceptional team and the visionary leadership of our Managing Director, Evan Jackson whose integrity, client-first ethos, and commitment to excellence have shaped the foundation of who we are.</p>
+<p>We are incredibly grateful to our clients for trusting us to protect what matters most to them, and it&#8217;s a privilege to support them and their businesses. We are excited for the future and look forward to sharing our journey with you all.</p>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+<p>The post <a href="https://guardian.com.au/2025/06/25/guardian-insurance-brokers-winner-of-the-2025-large-brokerage-of-the-year-award/">Guardian Insurance Brokers &#8211; Winner of the 2025 Large Brokerage of the Year Award</a> appeared first on <a href="https://guardian.com.au">Guardian Insurance Brokers</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-126">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "How to assess your insurance needs during business growth", "image": [], "datePublished": "2025-04-15T14:38:39+00:00", "dateModified": "2025-04-15T14:38:39+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-126"}</script>
+    
+    <div class="article-meta">
+        📅 Apr 15, 2025 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp;
+        <a href="https://guardian.com.au/2025/04/16/how-to-assess-your-insurance-needs-during-business-growth/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body">
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+<p><em>Last updated: March 2026</em></p>
+<p>Business growth brings new opportunities, but it can also introduce complexities and risks that need a re-evaluating to assess your exposure and current level of insurance coverage. Understanding how to assess and adjust your insurance needs is crucial to protecting your business from risks and ensuring you’re adequately covered.</p>
+<p>We have created a list of the most important aspects to consider for navigating your business growth.</p>
+<ol>
+<li><strong> Evaluate your changing risk profile<br></strong>Business growth means different things to different businesses. It could be you have recently entered new markets, increased your workforce, or have expanded your physical or digital footprint.  These types of factors all contribute to your risk profile and insurance needs.</li>
+</ol>
+<ol>
+<li><strong> Review and update your coverage<br></strong>As your business grows, your existing insurance policies may no longer be sufficient. Review each policy carefully to ensure it aligns with your current and future needs: We suggest starting with your General Liability Insurance, Property Insurance and Professional Indemnity Insurance.</li>
+</ol>
+<ol>
+<li><strong> Consider adding new types of insurance<br></strong>In some situations, growth comes with the need for specialised insurance products. Could your business benefit by introducing Cyber Insurance, Directors and Officers (D&amp;O) Insurance and Product Liability Insurance?</li>
+</ol>
+<ol>
+<li><strong> Assess legal and regulatory requirements<br></strong>Expansion could means navigating new legal and regulatory environments and compliance. Understanding how your insurance policies comply with the legal standards of new jurisdictions or industries is vital to limit risks.</li>
+</ol>
+<ol>
+<li><strong> Evaluate your business continuity plan<br></strong>A solid business continuity plan is essential for managing risks associated with growth. Your plan should include Disaster Recovery and Crisis Management.</li>
+</ol>
+<ol>
+<li><strong> Consult with your Insurance Broker<br></strong>Partnering with a knowledgeable insurance broker will provide valuable insights and help tailor your coverage to your evolving needs. A broker can assist with Policy Reviews and Customised Solutions.</li>
+</ol>
+<ol>
+<li><strong> Implement risk management strategies<br></strong>Beyond insurance, effective risk management strategies such as safety programs, data protection and quality control will help mitigate potential risks and reduce the likelihood of claims.</li>
+</ol>
+<p>Continually assessing and adjusting your businesses insurance needs during every growth stage is vital to protecting your enterprise. By consulting with experts, you can ensure that your business remains safeguarded. If you have any questions about your insurance coverage or would like to review your current policies, please contact your Guardian Insurance Broker.</p>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				<a href="mailto:guardian@guardian.com.au?subject=%20Coverage%20Review%20–%20Business%20Growth">Contact us to discuss your coverage needs</a>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+<p>The post <a href="https://guardian.com.au/2025/04/16/how-to-assess-your-insurance-needs-during-business-growth/">How to assess your insurance needs during business growth</a> appeared first on <a href="https://guardian.com.au">Guardian Insurance Brokers</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-127">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Cyber security and your business. Where are you at?", "image": [], "datePublished": "2025-04-14T20:59:47+00:00", "dateModified": "2025-04-14T20:59:47+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-127"}</script>
+    
+    <div class="article-meta">
+        📅 Apr 14, 2025 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp;
+        <a href="https://guardian.com.au/2025/04/15/cyber-security-and-your-business-where-are-you-at/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body">
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+<p><em>Last updated: March 2026</em></p>
+<p>The majority of businesses operate online in an increasingly complex digital landscape.  Data theft, Email compromise, Identity fraud and Malware attacks are real risks exposing you to financial and reputational damage.  In today’s online world, businesses face many potential cyber-attacks and are more susceptible than ever. Some of the most common cyber-attacks include:</p>
+<ul>
+<li><strong>Phishing Attacks:</strong>a type of cyber-attack that attempts to obtain sensitive information such as usernames, passwords and credit card details.</li>
+<li><strong>Ransomware:</strong>a type of malicious software that encodes users data, inhibiting access until and ransom is paid.</li>
+<li><strong>Data Breaches:</strong>an incident where sensitive information is accessed, stolen or released without authorisation.</li>
+<li><strong>Denial of Service Attacks:</strong>an attempt to disrupt the normal functioning of a computer, network or service by overwhelming it with a torrent of illegitimate requests.</li>
+<li><strong>Insider Threats: </strong>an employee, contractor or trusted partner misusing their authorised access to harm a business, personnel or resources.</li>
+</ul>
+<p>Some examples of how Cyber Insurance can assist your business are:</p>
+<ul>
+<li><strong>Financial Protection:</strong>Covering certain costs related to data breaches, legal fees, and regulatory fines.</li>
+<li><strong>Incident Response:</strong>Providing resources for immediate response and recovery efforts.</li>
+<li><strong>Business Interruption Coverage:</strong>Compensating for income lost during system downtime.</li>
+<li><strong>Legal Protection:</strong>Covering legal expenses if sued due to a data breach.</li>
+<li><strong>Reputation Management:</strong>Assisting in PR efforts to restore a damaged reputation.</li>
+</ul>
+<p>The unfortunate reality is that some businesses will never recover financially from a cyber-attacks. If you would like to discuss what cyber insurance options are available for your business, please contact your Client Relationship Manager.</p>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				<a href="mailto:guardian@guardian.com.au?subject=%20Cyber%20Insurance%20Protection%20">Contact us to discuss cyber insurance today</a>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+<p>The post <a href="https://guardian.com.au/2025/04/15/cyber-security-and-your-business-where-are-you-at/">Cyber security and your business. Where are you at?</a> appeared first on <a href="https://guardian.com.au">Guardian Insurance Brokers</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-159">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Der Fachkräftemangel und was man dagegen tun kann", "image": [], "datePublished": "2025-03-27T15:23:02+00:00", "dateModified": "2025-03-27T15:23:02+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-159"}</script>
+    
+    <div class="article-meta">
+        📅 Mar 27, 2025 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2025/03/27/der-fachkraeftemangel-und-was-man-dagegen-tun-kann/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2025/03/27/der-fachkraeftemangel-und-was-man-dagegen-tun-kann/">Der Fachkräftemangel und was man dagegen tun kann</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+<article class="article-card" id="artikel-128">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "The impact of underinsurance:  Protecting clients and avoiding costly surprises", "image": [], "datePublished": "2025-03-15T12:38:00+00:00", "dateModified": "2025-03-15T12:38:00+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-128"}</script>
+    
+    <div class="article-meta">
+        📅 Mar 15, 2025 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp;
+        <a href="https://guardian.com.au/2025/03/15/the-impact-of-underinsurance-protecting-clients-and-avoiding-costly-surprises/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body">
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+<p><em>Last updated: March 2026</em></p>
+<p>Underinsurance is a threat to your business that often goes unnoticed until disaster strikes.  As an Insurance Broker, it is critical for us to talk to our clients about this issue and its potential impact on their business operations.</p>
+<p>Underinsurance occurs when the coverage limits of an insurance policy are insufficient to fully compensate for losses incurred in the event of a claim. This shortfall can arise due undervalued assets, outdated coverage limits, or failure to account for evolving risks and inflationary pressures.</p>
+<p>In recent times we have witnessed natural disasters such as bushfires and floods impact businesses, while the rising costs of resources and property values have left a gap between the insured value versus the replacement costs.   </p>
+<p>The consequences of underinsurance can include financial strain, operational disruption, and legal and regulatory risks.</p>
+<p>Regular reviews of insurance coverage and limits are essential for staying ahead of the curve and include risk assessments, value preservations, and policy reviews and updates. Navigating the complexities of insurance coverage can be daunting for clients and that’s where the expertise of an experienced Insurance Broker becomes invaluable. Our team will provide you with personalised guidance, risk mitigation, advocacy and support.</p>
+<p>If you’re concerned or curious about your risk of being underinsured and would like to review your current policies, please contact your Client Relationship Manager.</p>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+				
+				
+				
+				
+				
+
+				<a href="mailto:guardian@guardian.com.au?subject=%20Coverage%20Review%20–%20Underinsurance">Contact us to review your cover today </a>
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+<p>The post <a href="https://guardian.com.au/2025/03/15/the-impact-of-underinsurance-protecting-clients-and-avoiding-costly-surprises/">The impact of underinsurance:  Protecting clients and avoiding costly surprises</a> appeared first on <a href="https://guardian.com.au">Guardian Insurance Brokers</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-160">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Deine Chance als Softwareentwickler (m/w/d)", "image": [], "datePublished": "2025-01-16T12:13:59+00:00", "dateModified": "2025-01-16T12:13:59+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-160"}</script>
+    
+    <div class="article-meta">
+        📅 Jan 16, 2025 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2025/01/16/deine-chance-als-softwareentwickler-m-w-d/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2025/01/16/deine-chance-als-softwareentwickler-m-w-d/">Deine Chance als Softwareentwickler (m/w/d)</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-115">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Russian Air Defence Likely Behind Azerbaijan Airlines Plane Crash That Killed 38 People, Military Experts Say", "image": [], "datePublished": "2024-12-27T18:20:34+00:00", "dateModified": "2024-12-27T18:20:34+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-115"}</script>
+    
+    <div class="article-meta">
+        📅 Dec 27, 2024 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp;
+        <a href="https://globalgazette.info/uk-news/russian-air-defence-likely-behind-azerbaijan-airlines-plane-crash-that-killed-38-people-military-experts-say/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>For free real time breaking news alerts sent straight to your inbox sign up to our breaking news emailsSign up to our free breaking news emailsSign up to our free breaking news emails</p>
+<p>I would like to be emailed about offers, events and updates from The Independent. Read our privacy policy</p>
+<p>The deadly Christmas Day crash of an Azerbaijani plane in Kazakhstan was likely caused by a Russian air defence system, military and aviation experts have said.</p>
+<p>It comes after sources close to Azerbaijan’s investigation into the incident said fire from a Russian Pantsir-S air-defence system was believed to be behind the devastating crash, in which 38 people were killed and 29 injured.</p>
+<p>But Moscow has downplayed the accusations, saying it is wrong to speculate on “hypotheses” before the outcome of a full investigation.</p>
+<p>Emergency services arrive at Azerbaijan Airlines plane crash wreckage site. (AP)Azerbaijan Airlines’ Embraer 190 was scheduled to land in the Russian city of Grozny in the North Caucasus on Wednesday after taking off from Baku &#8211; before it was diverted for reasons which have not yet been confirmed.</p>
+<p>The plane exploded in a fireball after crashing into the ground just three kilometres (two miles) from Aktau, Kazakhstan, where it had hoped to land after flying east across the Caspian Sea. Mobile phone footage appears to show the aircraft’s steep descent before hitting the ground.</p>
+<p>Subhonkul Rakhimov, a survivor of the crash who is now in hospital, told Reuters he “thought the plane was going to fall apart” and that it was acting “drunk” after a loud bang. Mr Rakhimov began reciting prayers and preparing for the end after the bang, he said. </p>
+<p>Subhonkul Rakhimov, one of the passengers on the Azerbaijan Airlines plane that crashed in Kazakhstan (Reuters)Preliminary investigations in Azerbaijan have found Russian air defences were responsible for the crash, four sources told Reuters. The plane’s communications had been cut off by electronic warfare systems on its approach to Grozny, one of the sources said.</p>
+<p>&#8220;No one claims that it was done on purpose. However, taking into account the established facts, Baku expects the Russian side to confess to the shooting down of the Azerbaijani aircraft,&#8221; the sources added.</p>
+<p>Azerbaijan Airlines said on Friday that preliminary investigations showed the plane had experienced “external and technical interference” prior to the crash. </p>
+<p>Analysis of images of the crashed plane shows it was almost certainly hit by a surface-to-air missile (SAM), according to Mark Zee of the OPSGroup, which monitors the world’s airspace and airports for risks. He said the likelihood of an SAM attack being behind the crash is “well into the 90-99% bracket”.</p>
+<p>A Russian Pantsir-S air-defense system, which a preliminary investigations show may have shot down the Azerbaijani Airlines flight (Getty Images/iStockphoto)</p>
+<p>Fatal flightpath: The course of Azerbaijan Airlines flight 8243 on 25 December 2024 (Flightradar24)Independent Russian military expert Yan Matveyev drew similar conclusions from the images. &#8220;It looks like the tail section of the plane was damaged by some missile fragments,&#8221; he told the Associated Press.</p>
+<p>It is unclear why the pilots decided to fly hundreds of miles east instead of attempting to land in another Russian airport after the plane was hit, Mr Matveyev said.</p>
+<p>&#8220;Perhaps some of the plane’s systems kept working for some time and the crew believed that they could make it and land normally,&#8221; he added, suggesting also that the crew may have faced restrictions on landing in Russia.</p>
+<p>Russia’s aviation watchdog, Rosaviatsia, said the flight had rerouted from its original destination in Chechnya due to heavy fog and a local alert regarding Ukrainian drones. It claimed the captain of the plane was offered other airports at which to land, but chose Kazakhstan’s Aktau. </p>
+<p>The watchdog says it has offered support to the Kazakh and Azerbeijani investigations into the crash, with Moscow saying it is important to wait for investigations to finish to work out what happened. </p>
+<p>The incident has faced comparisons with the crash of the Malaysian Airlines flight MH17 which was downed over Ukraine in 2014.</p>
+<p>A former expert at France’s BEA air accident investigation agency told AFP news agency that the crash was “reminiscent” of the MH17 incident, which also took place over a region of conflict between Russia and Ukraine</p>
+<p>Rescuers work at the wreckage of Azerbaijan Airlines Embraer 190 near the airport of Aktau (Kazakhstan&#8217;s Emergency Ministry Press Service)The Malaysian Airlines flight was travelling at cruising altitude over eastern Ukraine on a journey from Amsterdam to Kuala Lumpur when it was shot down in July 2014. A pro-Russian militia had misidentified the plane as a Ukrainian military transport aircraft and</p>
+<p>The separatists at first said their missiles were not advanced enough to hit a jet at that altitude and denied all involvement. This was disproved by later investigations which showed the plane was struck by their air defence system.</p>
+<p>Despite agreement from multiple experts on the likelihood that the Azerbaijan Airlines flight was shot down, there is yet to be official confirmation.</p>
+<p>Azerbaijani President Ilham Aliyev said in a news conference on Wednesday that it is too soon to speculate on reasons behind the crash, but that weather was the reason the plane had changed from its planned course.</p>
+<p>The rear of the crashed Azerbaijan Airlines Embraer ERJ-190 in Aktau, Kazakhstan (EPA)&#8221;The information provided to me is that the plane changed its course between Baku and Grozny due to worsening weather conditions and headed to Aktau airport, where it crashed upon landing,&#8221; he said.</p>
+<p>Authorities in Azerbaijan, Kazakhstan and Russia have been cautious in discussing the possible causes of the crash.</p>
+<p>But Azerbaijani lawmaker Rasim Musabekov said the plan was fired on while in the skies, and demanded an apology from Russia.</p>
+<p>&#8220;Those who did this must face criminal charges,&#8221; Musabekov said according to Azerbaijani news agency Turan. He added that compensations to the victims should also be paid, otherwise “relations will be affected”.</p>
+<p>The post <a href="https://globalgazette.info/uk-news/russian-air-defence-likely-behind-azerbaijan-airlines-plane-crash-that-killed-38-people-military-experts-say/">Russian Air Defence Likely Behind Azerbaijan Airlines Plane Crash That Killed 38 People, Military Experts Say</a> appeared first on <a href="https://globalgazette.info">Global Gazette</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-116">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "A 9th Telecoms Firm Has Been Hit By A Massive Chinese Espionage Campaign, The White House Says", "image": [], "datePublished": "2024-12-27T18:20:33+00:00", "dateModified": "2024-12-27T18:20:33+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-116"}</script>
+    
+    <div class="article-meta">
+        📅 Dec 27, 2024 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp;
+        <a href="https://globalgazette.info/uk-news/a-9th-telecoms-firm-has-been-hit-by-a-massive-chinese-espionage-campaign-the-white-house-says/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>The latest headlines from our reporters across the US sent straight to your inbox each weekdayYour briefing on the latest headlines from across the USYour briefing on the latest headlines from across the US</p>
+<p>I would like to be emailed about offers, events and updates from The Independent. Read our privacy policy</p>
+<p> A ninth U.S. telecoms firm has been confirmed to have been hacked as part of a sprawling Chinese espionage campaign that gave officials in Beijing access to private texts and phone conversations of an unknown number of Americans, a top White House official said Friday.</p>
+<p>Biden administration officials said this month that at least eight telecommunications companies, as well as dozens of nations, had been affected by the Chinese hacking blitz known as Salt Typhoon.</p>
+<p>But Anne Neuberger, the deputy national security adviser for cyber and emerging technologies, told reporters Friday that a ninth victim had been identified after the administration released guidance to companies about how to hunt for Chinese culprits in their networks.</p>
+<p>The update from Neuberger is the latest development in a massive hacking operation that has alarmed national security officials, exposed cybersecurity vulnerabilities in the private sector and laid bare China&#8217;s hacking sophistication. </p>
+<p>The hackers compromised the networks of telecommunications companies to obtain customer call records and gain access to the private communications of “a limited number of individuals.&#8221; Though the FBI has not publicly identified any of the victims, officials believe senior U.S. government officials and prominent political figures are among those whose whose communications were accessed.</p>
+<p>Neuberger said officials did not yet have a precise sense how many Americans overall were affected by Salt Typhoon, in part because the Chinese were careful about their techniques, but a “large number&#8221; were in the Washington-Virginia area.</p>
+<p>Officials believe the goal of the hackers was to identify who owned the phones and, if they were “government targets of interest,” spy on their texts and phone calls, she said. </p>
+<p>The FBI said most of the people targeted by the hackers are &#8220;primarily involved in government or political activity.” </p>
+<p>Neuberger said the episode highlighted the need for required cybersecurity practices in the telecommunications industry, something the Federal Communications Commission is to take up at a meeting next month.</p>
+<p>“We know that voluntary cyber security practices are inadequate to protect against China, Russia and Iran hacking of our critical infrastructure,” she said.</p>
+<p>The Chinese government has denied responsibility for the hacking.</p>
+<p>The post <a href="https://globalgazette.info/uk-news/a-9th-telecoms-firm-has-been-hit-by-a-massive-chinese-espionage-campaign-the-white-house-says/">A 9th Telecoms Firm Has Been Hit By A Massive Chinese Espionage Campaign, The White House Says</a> appeared first on <a href="https://globalgazette.info">Global Gazette</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-117">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Airport Delays LIVE: Passengers Facing Two-Hour Delays As Fog Causes Chaos At Manchester And Gatwick", "image": [], "datePublished": "2024-12-27T18:20:29+00:00", "dateModified": "2024-12-27T18:20:29+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-117"}</script>
+    
+    <div class="article-meta">
+        📅 Dec 27, 2024 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp;
+        <a href="https://globalgazette.info/world-news/airport-delays-live-passengers-facing-two-hour-delays-as-fog-causes-chaos-at-manchester-and-gatwick/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>The weather is having an impact as airports return to their normal flight schedules after Christmas (Steve Parsons/PA) (PA Archive)</p>
+<p>Get the free Morning Headlines email for news from our reporters across the worldSign up to our free Morning Headlines emailSign up to our free Morning Headlines email</p>
+<p>I would like to be emailed about offers, events and updates from The Independent. Read our privacy policy</p>
+<p>UK passengers desperately trying to travel ahead of the New Year have been hit by severe disruption at the country’s busiest airports.</p>
+<p>Thick fog has shrouded the country in recent days &#8211; wrecking havoc on festive travel plans as airports struggle to return to their normal flight scheduled after Christmas.</p>
+<p>Gatwick and Manchester, the UK’s second and third busiest airports, are among those affected by the bad weather.</p>
+<p>Almost every flight from Manchester airport was delayed on Friday, with the majority being held back by over two hours. Several to destinations such as Guernsey, Dublin, Munich and Hurghada were also delayed by over four hours.</p>
+<p>A spokesperson for Manchester airport said it was experiencing delays as a reult of the fog but said passengers due to travel should prepare as normal and aim to arrive at the airport in line with their airline’s advice.</p>
+<p>Travellers are being urged to check with their airline as air traffic restrictions are in place, the country’s main air traffic controlprovider Nats said on Friday.</p>
+<p> It added that it was continuing to monitor the situation alongside a Met Office expert “embedded” in its operation.</p>
+<p>Delays of over four hoursSome passengers at Gatwick and Manchester Airport have faced delays of over four hours today.</p>
+<p>Almost every flight from Manchester airport was delayed on Friday, with the majority being held back by over two hours. Several to destinations such as Guernsey, Dublin, Munich and Hurghada were also delayed by over four hours.</p>
+<p>The delays appeared to be less severe at Gatwick, though most were around the two hour mark.</p>
+<p>Flights into the evening at both airports are still currently expecting to face delays, according to flight radar.</p>
+<p>(Getty Images)Athena Stavrou27 December 2024 18:13</p>
+<p>EasyJet experiencing disruptionBritain’s biggest budget airline, EasyJet, said it is currently experiencing some disruption to its flying programme due to low visibility.</p>
+<p>“While this is outside of our control, we are doing all we can to minimise the impact of the delays,” a spokesperson said.</p>
+<p>(PA)Athena Stavrou27 December 2024 18:01</p>
+<p>Full statement from air traffic controlTravellers are being urged to check with their airline as air traffic restrictions are in place at several UK airports due to fog, the country’s main air traffic control (ATC) provider Nats said on Friday.</p>
+<p>A Nats spokesperson said: “Due to widespread fog, temporary air traffic restrictions are in place at several airports across the UK today. Restrictions of this sort are only ever applied to maintain safety.</p>
+<p>“We continue to monitor the situation and have a Met Office expert embedded within our operation to ensure we have the latest available information. Our teams are working closely with the airports and airlines to minimise disruption.”</p>
+<p>Athena Stavrou27 December 2024 18:00</p>
+<p>Air passengers facing heavy delaysAirline passengers are facing heavy delays days before the new year as thick fog wreaks havoc on the busiest UK airports.</p>
+<p>Gatwick and Manchester, the UK’s second and third busiest airports, are among those affected by the bad weather.</p>
+<p>Almost every flight from Manchester airport was delayed on Friday, with the majority being held back by over two hours. Several to destinations such as Guernsey, Dublin, Munich and Hurghada were also delayed by over four hours.</p>
+<p>Athena Stavrou27 December 2024 18:00</p>
+<p>The post <a href="https://globalgazette.info/world-news/airport-delays-live-passengers-facing-two-hour-delays-as-fog-causes-chaos-at-manchester-and-gatwick/">Airport Delays LIVE: Passengers Facing Two-Hour Delays As Fog Causes Chaos At Manchester And Gatwick</a> appeared first on <a href="https://globalgazette.info">Global Gazette</a>.</p></div>
+</article>
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+<article class="article-card" id="artikel-118">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Offenders Should Be Moved To Open Prisons To Tackle Overcrowding, Says Former Justice Secretary", "image": [], "datePublished": "2024-12-27T18:20:28+00:00", "dateModified": "2024-12-27T18:20:28+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-118"}</script>
+    
+    <div class="article-meta">
+        📅 Dec 27, 2024 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp;
+        <a href="https://globalgazette.info/world-news/offenders-should-be-moved-to-open-prisons-to-tackle-overcrowding-says-former-justice-secretary/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>For free real time breaking news alerts sent straight to your inbox sign up to our breaking news emailsSign up to our free breaking news emailsSign up to our free breaking news emails</p>
+<p>I would like to be emailed about offers, events and updates from The Independent. Read our privacy policy</p>
+<p>Thousands of prisoners should be moved to open prisons to tackle overcrowding and help prepare inmates for release, a former justice secretary has said.</p>
+<p>David Gauke, who has been commissioned by the government to lead a review of sentencing policy, believes the move would save money and help reduce reoffending.</p>
+<p>Urging ministers to look to Spain where one in four prisoners are allowed to leave prison walls during the day, he said: “We don’t make as much use of open prisons as we might do.”</p>
+<p>Britain houses 5,143 out of 86,000 prisoners in category D jails, which have lower security and allow prisoners to spend days outside of prison on licence to work or complete education.</p>
+<p>He told The Times: “You might spend part of your day out of a prison working and then return to sleep at night – if that gets you into the rhythm of working and the disciplines of working then that is helpful.</p>
+<p>Gauke admitted ‘we’re not going to please everybody’ with his recommendations on sentencing (Getty)“You can start to rebuild family relationships. We know that what tends to drive rehabilitation is work, family relationships and a home.”</p>
+<p>Category D jails are most frequently used in Britain for non-violent offenders but are also used for those nearing the end of longer jail terms for serious crimes.</p>
+<p>Even if the Parole Board recommends a prisoner for transfer to open conditions, the secretary of state for justice is free to reject or accept their advice.</p>
+<p>Housing an offender in open prison costs an average of £27,348 a year, according to Ministry of Justice figures, a significant saving compared to £51,108 a year to keep them in a secure prison.</p>
+<p>However, any significant increase in their use in Britain would require investment because there are only 1,000 spare spaces in the open estate.</p>
+<p>Britain only houses 5,143 out of 86,000 prisoners in category D jails, figures show (PA Archive)Mr Gauke’s intervention comes after he visited three jails in Spain this month, where the prison population has declined by more than a fifth in 10 years following measures including greater use of open prisons, community sentences and house arrest.</p>
+<p>His sentencing review, which is due to be published in the spring, is expected to recommend increased use of all these measures and to explore greater use of technology, such as electronic tagging.</p>
+<p>The government announced the review in October after it released thousands of inmates, including some who had served 40 per cent of their sentence, under emergency measures to ease overcrowding.</p>
+<p>Mr Gauke, who previously served as justice secretary under Theresa May, said: “There is clearly an opportunity here. We’re at the beginning of a parliamentary term, with the government with a large majority.</p>
+<p>“We have run out of space. I think there is an increasing recognition that we have gone down the route of increasing sentences to an extent that it’s doing nothing to reduce crime but it is causing significant costs.</p>
+<p>“Other countries have had large prison populations and brought them down. What I hope to do with this review is set out practical proposals, but also this is an opportunity to reset the debate. This is not about being soft on crime, it is about more effectively reducing crime.”</p>
+<p>He added: “I’m sure we’re not going to please everybody with those recommendations.”</p>
+<p>Justice secretary Shabana Mahmoud said Labour inherited a prison system ‘within days of collapse’ (Getty Images)Announcing the review in October, justice secretary Shabana Mahmood said the government inherited a prison system “within days of collapse”.</p>
+<p>“This review, along with our prison building programme, will ensure we never again have more prisoners than prison spaces,” she added.</p>
+<p>“I believe in punishment. I believe in prison, but I also believe that we must increase the range of punishments we use. And that those prisoners who earn the right to turn their lives around should be encouraged to do so.</p>
+<p>“The sentencing review will make sure prison and punishment work, and that there is always a cell waiting for dangerous offenders.”</p>
+<p>The government has committed to spending £2.1bn on building prisons in the next two years, with a target of adding 14,000 spaces by 2031.</p>
+<p>The post <a href="https://globalgazette.info/world-news/offenders-should-be-moved-to-open-prisons-to-tackle-overcrowding-says-former-justice-secretary/">Offenders Should Be Moved To Open Prisons To Tackle Overcrowding, Says Former Justice Secretary</a> appeared first on <a href="https://globalgazette.info">Global Gazette</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-161">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "insightpro auf virtueller PwC Konferenz", "image": [], "datePublished": "2024-10-18T07:26:19+00:00", "dateModified": "2024-10-18T07:26:19+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-161"}</script>
+    
+    <div class="article-meta">
+        📅 Oct 18, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/10/18/insightpro-auf-virtueller-pwc-konferenz/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/10/18/insightpro-auf-virtueller-pwc-konferenz/">insightpro auf virtueller PwC Konferenz</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-162">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Virtuelle PwC Konferenz zu Service Charge Automation", "image": [], "datePublished": "2024-09-12T09:55:49+00:00", "dateModified": "2024-09-12T09:55:49+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-162"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 12, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/12/virtuelle-pwc-konferenz-zu-service-charge-automation/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/12/virtuelle-pwc-konferenz-zu-service-charge-automation/">Virtuelle PwC Konferenz zu Service Charge Automation</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-163">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Werkstudent (m/w/d) – Bachelor-/Masterarbeit – Berufseinstieg (m/w/d)Initiativbewerbung", "image": [], "datePublished": "2024-09-05T14:30:21+00:00", "dateModified": "2024-09-05T14:30:21+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-163"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/initiativbewerbungwerkstudent-m-w-d-bachelor-masterarbeit-berufseinstieg-m-w-dinitiativbewerbung/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/initiativbewerbungwerkstudent-m-w-d-bachelor-masterarbeit-berufseinstieg-m-w-dinitiativbewerbung/">Werkstudent (m/w/d) – Bachelor-/Masterarbeit – Berufseinstieg (m/w/d)Initiativbewerbung</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-164">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Initiativbewerbung", "image": [], "datePublished": "2024-09-05T14:10:22+00:00", "dateModified": "2024-09-05T14:10:22+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-164"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/initiativbewerbung/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/initiativbewerbung/">Initiativbewerbung</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+<article class="article-card" id="artikel-165">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Auszubildender zum Fachinformatiker, Anwendungsentwicklung (m/w/d)", "image": [], "datePublished": "2024-09-05T14:03:05+00:00", "dateModified": "2024-09-05T14:03:05+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-165"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/auszubildender-zum-fachinformatiker-anwendungsentwicklung-m-w-d/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/auszubildender-zum-fachinformatiker-anwendungsentwicklung-m-w-d/">Auszubildender zum Fachinformatiker, Anwendungsentwicklung (m/w/d)</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-166">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Callcenter Mitarbeiter (m/w/d), Teilzeit", "image": [], "datePublished": "2024-09-05T13:56:39+00:00", "dateModified": "2024-09-05T13:56:39+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-166"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/mitarbeiter-vertriebsunterstuetzung-m-w-d-teilzeit/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/mitarbeiter-vertriebsunterstuetzung-m-w-d-teilzeit/">Callcenter Mitarbeiter (m/w/d), Teilzeit</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-167">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Technisch versierter IT-Mitarbeiter (m/w/d)", "image": [], "datePublished": "2024-09-05T09:58:42+00:00", "dateModified": "2024-09-05T09:58:42+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-167"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/technisch-versierter-it-mitarbeiter-m-w-d/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/technisch-versierter-it-mitarbeiter-m-w-d/">Technisch versierter IT-Mitarbeiter (m/w/d)</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-168">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Full-Stack Softwareentwickler (m/w/d)", "image": [], "datePublished": "2024-09-05T08:20:26+00:00", "dateModified": "2024-09-05T08:20:26+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-168"}</script>
+    
+    <div class="article-meta">
+        📅 Sep 05, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://nicetec.de/blog/2024/09/05/full-stack-softwareentwickler-m-w-d/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body"><p>Der Beitrag <a href="https://nicetec.de/blog/2024/09/05/full-stack-softwareentwickler-m-w-d/">Full-Stack Softwareentwickler (m/w/d)</a> erschien zuerst auf <a href="https://nicetec.de">Nicetec GmbH</a>.</p></div>
+</article>
+<article class="article-card" id="artikel-254">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Die Inflation zeigt der Fed den Mittelfinger", "image": [], "datePublished": "2024-01-31T23:00:06+00:00", "dateModified": "2024-01-31T23:00:06+00:00", "mainEntityOfPage": "https://thenewsday112.github.io/milion/page16.html#artikel-254"}</script>
+    
+    <div class="article-meta">
+        📅 Jan 31, 2024 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp;
+        <a href="https://www.stockwatch.info/die-inflation-zeigt-der-fed-den-mittelfinger/" target="_blank" rel="nofollow noopener">Read Source &rarr;</a>
+    </div>
+    <div class="article-body">
+<p>Sehr geehrter Leser, ist die Inflation vorbei? Eigentlich nicht. Es könnte sogar noch schlimmer kommen… Beginnen wir die Analyse mit den jüngsten Daten. Das Bureau of Labor Statistics ist eine Einheit des Arbeitsministerium der Vereinigten Staaten. Es berichtete kürzlich, dass die Inflation (gemessen am Verbraucherpreisindex, CPI, auf Jahresbasis) in den USA bei 3,4% lag. Das […]</p>
+<p>The post <a href="https://anlegerverlag.de/die-inflation-zeigt-der-fed-den-mittelfinger/">Die Inflation zeigt der Fed den Mittelfinger</a> appeared first on <a href="https://anlegerverlag.de/">AnlegerVerlag</a>.</p>
+</div>
+</article>
+<div style="text-align:center;margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+<div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html" class="active">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a></div><footer>&copy; 2026 News Portal Indonesia. All rights reserved.</footer>
+</div></body></html>
