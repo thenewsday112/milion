@@ -4,3 +4,5 @@ beautifulsoup4
 lxml
 python-dateutil
 bleach
+google-api-python-client
+google-auth
