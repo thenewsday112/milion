@@ -6,7 +6,7 @@ import googleapiclient.discovery
 
 # --- KONFIGURASI DOMAIN & SITEMAP ---
 BASE_URL = "https://thenewsday112.github.io/milion"
-SITEMAP_URL = f"{BASE_URL}/sitemap.xml"  # Sesuaikan dengan lokasi file sitemap Anda di folder output/root
+SITEMAP_URL = f"{BASE_URL}/output/sitemap.xml"  # Sesuaikan dengan lokasi file sitemap Anda di folder output/root
 
 def ping_google_sitemap():
     print("=" * 60)
