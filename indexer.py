@@ -1,71 +1,54 @@
 import os
 import json
+import requests
 from google.oauth2 import service_account
 import googleapiclient.discovery
 
-# --- KONFIGURASI REPO & DOMAIN ---
+# --- KONFIGURASI DOMAIN & SITEMAP ---
 BASE_URL = "https://thenewsday112.github.io/milion"
+SITEMAP_URL = f"{BASE_URL}/sitemap.xml"  # Sesuaikan dengan lokasi file sitemap Anda di folder output/root
 
-# Daftar halaman indeks, paginasi, dan kategori utama yang ingin di-index
-INDEX_PAGES = [
-    "/index.html",
-    "/page1.html",
-    "/page2.html",
-    "/technology.html",
-    "/business.html",
-    "/sports.html",
-    "/entertainment.html",
-    "/science.html",
-]
-
-def run_google_indexer():
+def ping_google_sitemap():
     print("=" * 60)
-    print("MENGIRIM HALAMAN INDEKS & KATEGORI KE GOOGLE INDEXING API")
+    print("MENGIRIM SITEMAP KE GOOGLE SEARCH & PING API")
     print("=" * 60)
 
-    # 1. Autentikasi Google API via GitHub Secret
+    # 1. Cara Paling Mudah: Menggunakan URL Ping Resmi Google
+    # Google Bot akan otomatis datang merayapi sitemap ketika di-ping ke URL ini
+    ping_url = f"https://www.google.com/ping?sitemap={SITEMAP_URL}"
+    
+    try:
+        response = requests.get(ping_url)
+        if response.status_code == 200:
+            print(f"[OK] Berhasil melakukan Ping Sitemap ke Google: {SITEMAP_URL}")
+        else:
+            print(f"[-] Gagal Ping Sitemap, status code: {response.status_code}")
+    except Exception as e:
+        print(f"[-] Error saat melakukan HTTP Ping: {e}")
+
+    # 2. (Opsional) Menggunakan Indexing API untuk memberitahu URL Sitemap-nya langsung
     try:
         google_creds_env = os.environ.get("GOOGLE_CREDENTIALS_JSON")
-        if not google_creds_env:
-            print("[-] ERROR: Secret GOOGLE_CREDENTIALS_JSON tidak ditemukan!")
-            return
+        if google_creds_env:
+            creds_dict = json.loads(google_creds_env)
+            credentials = service_account.Credentials.from_service_account_info(
+                creds_dict, scopes=["https://www.googleapis.com/auth/indexing"]
+            )
+            service = googleapiclient.discovery.build("indexing", "v3", credentials=credentials)
             
-        creds_dict = json.loads(google_creds_env)
-        credentials = service_account.Credentials.from_service_account_info(
-            creds_dict, scopes=["https://www.googleapis.com/auth/indexing"]
-        )
-        service = googleapiclient.discovery.build("indexing", "v3", credentials=credentials)
-        print("[+] Berhasil terhubung ke Google Indexing API.")
+            body = {
+                "url": SITEMAP_URL,
+                "type": "URL_UPDATED"
+            }
+            
+            req = service.urlNotifications().publish(body=body)
+            res = req.execute()
+            print(f"[OK] Berhasil mendaftarkan Sitemap via Google Indexing API.")
     except Exception as e:
-        print(f"[-] Gagal autentikasi: {e}")
-        return
+        print(f"[-] Info: Indexing API skip atau limit tercapai ({e})")
 
-    success_count = 0
-    failed_count = 0
-
-    # 2. Kirim URL Halaman Indeks & Kategori Utama
-    for path in INDEX_PAGES:
-        url_to_index = f"{BASE_URL}{path}"
-
-        body = {
-            "url": url_to_index,
-            "type": "URL_UPDATED"
-        }
-
-        try:
-            request = service.urlNotifications().publish(body=body)
-            response = request.execute()
-            success_count += 1
-            print(f"[OK] Berhasil di-index: {url_to_index}")
-        except Exception as e:
-            failed_count += 1
-            print(f"[GAGAL] {url_to_index} -> Error: {e}")
-
-    print("\n" + "=" * 60)
-    print(f"[PROSES SELESAI]")
-    print(f" - Berhasil dikirim : {success_count}")
-    print(f" - Gagal             : {failed_count}")
     print("=" * 60)
+    print("[SELESAI] Sitemap telah diserahkan ke Google.")
 
 if __name__ == "__main__":
-    run_google_indexer()
+    ping_google_sitemap()
