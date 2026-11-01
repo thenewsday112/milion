@@ -12,7 +12,7 @@ import bleach
 BASE_DIR = Path(__file__).parent.resolve()
 DB_PATH = BASE_DIR / "database_5menit" / "database.sqlite"
 OUTPUT_DIR = BASE_DIR / "output"
-BASE_URL = "https://thenewsday112.github.io/pyton"
+BASE_URL = "https://thenewsday112.github.io/milion"
 
 ARTICLES_PER_PAGE = 20
 SITE_NAME = "News Portal Indonesia"
