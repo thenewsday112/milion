@@ -8,14 +8,14 @@ BASE_URL = "https://thenewsday112.github.io/milion"
 
 # Daftar halaman indeks, paginasi, dan kategori utama yang ingin di-index
 INDEX_PAGES = [
-    "/output/index.html",
-    "/output/page1.html",
-    "/output/page2.html",
-    "/output/technology.html",
-    "/output/business.html",
-    "/output/sports.html",
-    "/output/entertainment.html",
-    "/output/science.html",
+    "/index.html",
+    "/page1.html",
+    "/page2.html",
+    "/technology.html",
+    "/business.html",
+    "/sports.html",
+    "/entertainment.html",
+    "/science.html",
 ]
 
 def run_google_indexer():
