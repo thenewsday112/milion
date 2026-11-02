@@ -6,8 +6,8 @@ import googleapiclient.discovery
 
 # --- KONFIGURASI REPO & DOMAIN ---
 BASE_URL = "https://thenewsday112.github.io/milion"
-# Mengarahkan langsung ke file sitemap.xml di dalam folder output/
-SITEMAP_URL = f"{BASE_URL}/output/sitemap.xml"  
+# Mengarahkan langsung ke file sitemap.xml di folder utama (root)
+SITEMAP_URL = f"{BASE_URL}/sitemap.xml"  
 
 def run_google_indexer():
     print("=" * 60)
